@@ -23,6 +23,7 @@
             border: 1px solid #ccc;
             margin: auto;
             display: flex;
+            box-shadow: 3px 0px 10px #ccc;
         }
         .left{
             width:150px;
@@ -63,7 +64,7 @@
         .divid{
             width: 80%;
             border: 1px solid #000000;
-            margin-left: 10px; 
+            margin-left: 30px; 
         }
         dl{
             font-size: 13px;
@@ -88,21 +89,27 @@
             margin-left: 50px;
         }
         .work{
-            padding: 0px 20px;
+            /* padding: 0px 20px; */
             border-left: 2px solid #272626;
             margin-left: 10px;
-            width: 80%;
+            width: 100%;
+            margin-top: 10px;
             
            
         }
         .work dl{
+            padding: 0px 10px;
             color: rgb(40, 40, 40);
-            margin-bottom: 30px;
-            line-height: 2;
+            margin-bottom: 10px;
+            line-height: 1.2;
             position: relative;
+            
         }
         .work dl dd ul{
             margin-left: 30px;
+            text-align: justify;
+            /* padding: 10px; */
+            margin-right: 20px;
         }
 
         .work dl:before{
@@ -112,11 +119,40 @@
             background-color: #101010;
             border-radius: 100px;
             position: absolute;
-            left: -10px;
+            left: -15px;
             top: 10px;
         }
         .work dt{
             font-weight: 600;
+        }
+        .profile .heading,.work .heading{
+            text-align: left;
+            margin-left: 30px;
+            font-size: 15px;
+            margin-top: 50px;
+        }
+        .profile p{
+            font-size: 10px;
+            font-family: sans-serif;
+            font-weight: 100;
+            padding: 5px 15px;
+            margin-left: 20px;
+            text-align: justify;
+
+        }
+        .referer{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            
+        }
+        .referer h5 ,p{
+            font-size: 10px;
+            font-weight: 200;
+
+        }
+        .referer p{
+            margin-top: 10px;
         }
 
 
@@ -181,12 +217,14 @@
             <h3 style="font-weight: 100;">Marketing Manager </h3>
             <div class="divide"></div>
 
-            <h2>Profile</h2>
+           <div class="profile">
+            <h3 class="heading">Profile</h3>
             <div class="divid"></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita illum harum voluptatibus labore molestiae quos. Dolor, fugiat distinctio! Deleniti minima amet provident blanditiis eligendi consequatur eveniet ratione quis recusandae.</p>
+           </div>
 
             <div class="work">
-                <h2>Work Experience</h2>
+                <h3 class="heading">Work Experience</h3>
             <div class="divid"></div>
                 <dl>
                     <dt>Borcelle Studio</dt>
@@ -223,9 +261,29 @@
                 </dl>
             </div>
         
+            <div class="refer">
+                <h3 class="heading">Reference</h3>
+                <div class="divid"></div>
+                <div class="referer">
+                    <div class="l1">
+                        <h5>Estelle Darcy</h5>
+                        <h5>Wardiere Inc. / CTO</h5>
+                        <p>Phone : 123-4567-896 <br>
+                        Email : hello@reallygreatsite.com</p>
+                    </div>
+                    <div class="r1">
+                        <h5>Harper Richard</h5>
+                        <h5>Wardiere Inc. / CEO</h5>
+                        <p>Phone : 123-4567-896 <br>
+                            Email : hello@reallygreatsite.com</p>
+                    </div>
+                </div>
+
+            </div>
         
        
         </div>
+
     </section>
 </body>
 </html>
