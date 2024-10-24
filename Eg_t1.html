@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            /* background-color: rgb(98, 98, 98); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            width: 50%;
+            height: 60%;
+            background: linear-gradient(130deg, rgb(233, 92, 115),rgb(24, 24, 136));
+            padding: 10px;
+            border-radius: 20px;
+
+        }
+        .card input{
+            width: 55%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+        .card label{
+            font-size: 17px;
+        }
+        .card a{
+            text-decoration: none;
+            color: rgb(202, 15, 58);
+        }
+        .group{
+            display: flex;
+            align-items: center;
+            gap:10px;
+        }
+        #btn{
+            border: none;
+            outline: none;
+            width: 80%;
+            padding: 5px;
+            margin: 10px 0px;
+            background-color: rgb(114, 35, 105);
+            cursor: pointer;
+            border-radius: 100px;
+            box-shadow: 2px 3px 0px;
+           
+        }
+        #btn:hover{
+            background-color: rgb(201, 94, 178);
+            transition: 1s;
+            /* transform: scale(0.8); */
+            box-shadow: none;
+            transform: translateX(2px) translateY(3px);
+        }
+        
+        .emoji{
+            min-width: 30px;
+            height: 30px;
+            background-color: #ccc;
+            border-radius: 100px;
+            background: url(https://cdn.dribbble.com/users/10931652/screenshots/20525538/media/87a3d1c10702fb8a3e964a11397de84f.gif) no-repeat center;
+            background-size: cover;
+            filter:drop-shadow(4px 4px 10px #535151)
+        }
+        .group input:active + .emoji{
+            background:url(https://i.pinimg.com/originals/62/eb/fa/62ebfa7a8501e2c48a62f95baa6dc5f9.gif)no-repeat center;
+            background-size: cover;
+            
+        }
+        .group input:hover{
+            background-color: rgb(162, 162, 159);
+            transition: 1s;
+        }
+       
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="card">
+            <h3>Welcome to Login page🙏</h3>
+            <br>
+            <div class="group">
+                <label for="email">Email Address</label>
+                <input type="text" placeholder="example@gmail.com" id="email" name="email">
+                <div class="emoji"></div>
+            </div>
+            <div class="group">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Secret password" id="password" name="password">
+                <div class="emoji"></div>
+
+            </div>
+            <p>Don't have an account?<br> <center><a href="#">Create account</a></center></p>
+            <button type="button"  id="btn">Sign in</button>
+
+
+        </div>
+    </section>
+</body>
+</html>
